@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<link href="mainStyleSheet.css" rel="stylesheet" type="text/css">
+
+<style type="text/css">
+.cell { position: relative; }
+</style>
+
+
+<script type="text/javascript" language="JavaScript">
+<!--
+function hiliteMenuItem(id) {
+  //var mTable = 0;
+  var cells = 0;
+  var i = 0;
+  var targCell = 0;
+  //if (document.layers)
+    //mTable = document["menuTable"];
+  //else if (document.all)
+    //mTable = document.all["menuTable"];
+  //else if (document.getElementById)
+  //mTable = document.getElementById("menuTable");
+
+  cells = document.getElementsByTagName("td");
+	
+  //if (document.layers)
+    //document[id].bgColor = "black" == 'transparent' ? null : color;
+  //else if (document.all)
+    //document.all[id].style.backgroundColor = "black";
+  //else if (document.getElementById)
+    targCell = document.getElementById(id);
+    targCell.style.backgroundColor = "#999999";
+	
+	for (i=0; i<=cells.length; i=i+1) {
+		if (cells[i].id != id) {
+    	cells[i].style.backgroundColor = "#CC3333"};
+	}
+}
+
+//-->
+</script>
+
+</head>
+
+<body bgcolor="#CC3333" class="mainText">
+
+<table id="menuTable" class="mainText">
+<tr><td id="home" nowrap><a href="home.html" target="content">Home</a></tr>
+<tr><td id="monica" nowrap><a href="monica.html" target="content">About Monica</a></tr>
+<tr><td id="listen" nowrap><a href="listen.html" target="content">Hear Monica Play</a></tr>
+<tr><td id="policy" nowrap><a href="policy.html" target="content">Studio Policy/Rates</a></tr>
+<tr><td id="calendar" nowrap><a href="/studiocalendar/" target="content">Calendar of Events</a></tr>
+</table>
+
+<script>hiliteMenuItem("home");</script>
+
+</body>
+
+</html>
