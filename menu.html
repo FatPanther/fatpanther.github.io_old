@@ -14,12 +14,13 @@
 	<script type="text/javascript" language="JavaScript">
 		function hiliteMenuItem(id) {
 			var cells = document.getElementsByTagName("td");
+			//turn all cells non-hilite color
+			for (i=0; i<=cells.length; i=i+1) {
+				cells[i].style.backgroundColor = "#CC3333";
+			}
+			//hilite given cell			
 			var targCell = document.getElementById(id);
 			targCell.style.backgroundColor = "#999999";
-			for (i=0; i<=cells.length; i=i+1) {
-				if (cells[i].id != id) {
-					cells[i].style.backgroundColor = "#CC3333"};
-			}
 		}
 	</script>
 </head>
