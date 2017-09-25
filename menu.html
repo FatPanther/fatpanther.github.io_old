@@ -15,12 +15,11 @@
 		function hiliteMenuItem(id) {
 			var cells = document.getElementsByTagName("td");
 			//turn all cells non-hilite color
-			for (i=0; i<=cells.length; i=i+1) {
-				cells[i].style.backgroundColor = "#CC3333";
+			for (cell in cells) {
+				cell.style.backgroundColor = "#CC3333";
 			}
 			//hilite given cell			
-			var targCell = document.getElementById(id);
-			targCell.style.backgroundColor = "#999999";
+			document.getElementById(id).style.backgroundColor = "#999999";
 		}
 	</script>
 </head>
